@@ -1,0 +1,28 @@
+.content-wrapper {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}
+
+.content-form {
+	padding: 40px;
+	height: 300px;
+	border: 1px solid black;
+	font-family: "Helvetica";
+}
+.error {
+	font-size: 20px;
+	font-weight: bold;
+}

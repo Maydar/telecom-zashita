@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Login Form</title>
+	<style type="text/css" media="screen">
+		/*IE10+
+		  альтернатива жесткое задание размеров формы, top, left, right, bottom 0 margin auto
+		  тогда для планшетов и телефонов, нужно использовать медиа запросы
+		*/
+		.content {
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+
+			display: -webkit-box;
+  			display: -moz-box;
+ 			display: -ms-flexbox;
+ 			display: -webkit-flex;
+			display: flex;
+
+			align-items: center;
+			justify-content: center;
+			overflow: auto;
+		}
+		.form {
+			padding: 40px;
+			border: 1px solid black;
+			
+		}
+		.field-wrapper {
+			float: left;
+		}
+		.field {
+			padding: 0;
+			line-height: 25px;
+			clear:both;
+			text-align: right;
+		}
+		label {
+			float: left;
+			padding-right: 10px;
+		}
+		p {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<form action="/login" class="form">
+			<div class="field-wrapper">
+				<div class="field">
+					<label for="login">Логин</label>
+					<input type="text" id="login">
+				</div>
+				<div class="field">
+					<label for="password">Пароль</label>
+					<input type="text" id="password">
+				</div>
+				<p>
+					<button type="submit">Войти</button>	
+				</p>
+				<p>
+					<a href="/index.html">назад</a>
+				</p>					
+			</div>
+		</form>		
+	</div>
+	
+	
+</body>
+</html>
