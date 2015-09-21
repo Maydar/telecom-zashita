@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 
 gulp.task('browser-sync', function () {
 	browserSync.init(["*.html"], {
+		open: false,
 		server: {
 			baseDir: ""
 		}
