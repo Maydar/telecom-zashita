@@ -1,28 +1,90 @@
+
+/* BODY */
 .content-wrapper {
+	margin: 0;
+	padding: 0;
 	height: 100%;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-
+	color: #776E65;
+	background-color: #2A475F;
 	display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 
-	align-items: center;
 	justify-content: center;
 	overflow: auto;
 }
+	
+	/* TABLE WRAPPER*/
+	.content-form {
+		border: 1px solid black;
+		padding: 40px;
+		min-width: 600px;
+		background-color: #171A21;
+		font-family: "Helvetica";
+	}
+		/* ERROR WRAPPER */
 
-.content-form {
-	padding: 40px;
-	height: 300px;
-	border: 1px solid black;
-	font-family: "Helvetica";
-}
-.error {
-	font-size: 20px;
-	font-weight: bold;
-}
+		.error {
+			color: #B54040;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		
+		/* INPUT */
+
+		.matrixInput {
+			height: 40px;
+			width: 100%;
+			border-radius: 5px;
+			padding-left: 20px;
+			background-color: #2A3F5A;
+			color: #FFF;
+			font-size: 20px;
+			border: 0;
+			margin: 0;
+
+		}
+
+		/* TABLE STYLES */	
+		
+		
+		table {
+			border: 15px solid #2A475F;
+		}
+
+		table td {
+			height: 40px;
+			width: 40px;
+			border: 3px solid black;
+			text-align: center;
+			color: #776E65;
+			font-size: 20px;
+		}
+
+		/* BUTTON STYLES */
+
+		button {
+			background-color: #648F59;
+											
+			font-size: 16px;
+
+
+			border: 0px;
+			border-radius: 5px;
+			height: 40px;
+			width: 100px;
+			color: #FFF;
+			cursor: pointer;
+
+		}
+
+		button:hover {
+			background-color: #648B11;
+		}
+

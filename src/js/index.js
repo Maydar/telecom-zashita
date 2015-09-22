@@ -2,6 +2,7 @@ var MatrixViewModel = function () {
 	var self = this;
 
 	self.matrix = ko.observableArray();
+	self.display = ko.observable(false);
 
 	self.computedMatrix = ko.pureComputed({
 		read: function () {
@@ -10,13 +11,26 @@ var MatrixViewModel = function () {
 			try {
 				inputMatrix = eval(self.matrix())
 			} catch (e) {
+				self.display(false);
 				return null;
 			}
 
-			if (inputMatrix instanceof Array ||
-				inputMatrix === undefined) {
+			if (inputMatrix === undefined) {
+				self.display(false);	
+				return inputMatrix;	
+			};
+
+			if (inputMatrix instanceof Array) {
+				if (inputMatrix.length === 0) {
+					self.display(false);	
+					return inputMatrix;
+				};
+
+				self.display(true);	
 				return inputMatrix;
+			
 			} else {
+				self.display(false);
 				return null;
 			};
 		},
